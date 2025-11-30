@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
 # import everything you defined in A.py
-from A import commandcore_runner, run_session, APP_NAME, USER_ID, session_service
+# from A import commandcore_runner, run_session, APP_NAME, USER_ID, session_service
 
 app = FastAPI()
 
