@@ -63,5 +63,4 @@ async def run_single_turn(message: str, session_id: str) -> str:
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(req: ChatRequest):
-    reply = await run_single_turn(req.message, req.session_id)
-    return ChatResponse(reply=reply)
+    return ChatResponse(reply="backend ok")
